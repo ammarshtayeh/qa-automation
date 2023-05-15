@@ -1,0 +1,45 @@
+Report on Cypress Test Scripts
+
+Script Name: Login page
+
+Introduction:
+The Cypress test scripts provided aim to test the login functionality and user permissions on a web application's login page. The tests focus on different scenarios related to user permissions and actions performed by the user after logging in.
+
+Test Descriptions:
+
+1Test Name: Observe to read
+Description: This test verifies that when the user with the role "staff" logs in and sets the permission for "Observe" to "Read," the "Submit" button on the goals page should not exist.
+
+2Test Name: Goals to read
+Description: This test checks whether, after logging in as a "staff" user and setting the permission for "Goals" to "Read," the "Add Goal" option should not be visible on the goals page.
+
+3Test Name: Observe to N/A
+Description: This test ensures that when the user with the role "staff" logs in and sets the permission for "Observe" to "N/A," the option to observe goals should not be available on the goals page.
+
+4Test Name: Goals to N/A
+Description: This test validates that when the user with the role "staff" logs in and sets the permission for "Goals" to "N/A," a message should be displayed on the goals page stating that the user does not have permission for this module.
+
+5Test Name: Goals to write
+Description: This test confirms that after logging in as a "staff" user and setting the permission for "Goals" to "Write," the "Add Goal" button should be visible on the goals page.
+
+6Test Name: Observe to write
+Description: This test verifies that when the user with the role "staff" logs in and changes the permission for "Observe" to "Write," the "Unobserve" button should be present on the goals page.
+
+7Test Name: Add Staff
+Description: This test checks the functionality of adding a new staff member. It ensures that after logging in as a "staff" user, entering a staff name, and clicking the "Add staff" button, the new staff member should appear in the staff list.
+
+8Test Name: Search Staff
+Description: This test validates the search functionality for staff members. After logging in as a "staff" user and entering a staff name in the search field, the table should display the searched staff member.
+
+9Test Name: Cancel Staff
+Description: This test checks the cancellation of staff modification. After logging in as a "staff" user and clicking the edit button for a specific staff member, if the user cancels the modification, the staff member's details should remain unchanged.
+
+10Test Name: Remove Staff
+Description: This test ensures that the removal of a staff member is functioning correctly. After logging in as a "staff" user, clicking the edit button for a specific staff member, and confirming the deletion, the staff member should be removed from the staff list.
+
+Conclusion:
+The provided Cypress test scripts cover various scenarios related to user permissions and actions on the login page of a web application. By executing these tests, you can verify the expected behavior of user permissions and the functionality of adding, searching, modifying, and removing staff members. These tests help ensure the robustness and accuracy of the login page and associated features.
+
+
+
+
